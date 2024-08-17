@@ -1,0 +1,20 @@
+git config --global user.name omargamal
+git config --global user.email muomiga925@gmail.com
+cd ~
+mkdir omar
+git clone https://github.com/VxV0/OSC_2024.git /home/osc/omar
+cd omar
+mkdir task-2
+touch greeting.txt
+echo Hello world >> greeting.txt
+git add greeting.txt
+git commit -m "Added greeting"
+git checkout -b intro
+echo I love Git >> greeting.txt
+git add greeting.txt
+git commit -m "Added I love Git"
+git switch main
+git merge intro
+git tag v1
+cd /home/osc/omar
+git push -u origin main
