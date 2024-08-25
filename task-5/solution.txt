@@ -1,0 +1,2 @@
+cut -d "," -f 2 info.csv | sort -d | uniq >> emails.txt
+ps --sort=cmd | awk '{print $1, $4}' >>processes.txt
